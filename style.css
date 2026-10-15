@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Main page design */
+body {
+    background-color: #191414;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* 3. Navigation bar */
+header {
+    background-color: #000;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #1DB954;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+/* 4. Home page welcome section */
+.hero {
+    background-color: #243c2d;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1DB954;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* 5. Main content */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+.container > p {
+    margin-bottom: 20px;
+}
+
+/* 6. Music cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #242424;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 220px;
+}
+
+.card:hover {
+    background-color: #333;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+/* 7. Browse page search form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    min-width: 150px;
+}
+
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1DB954;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* 8. Genre cards */
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.genre {
+    flex: 1 1 250px;
+    min-height: 130px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.genre:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.pop {
+    background-color: #8e44ad;
+}
+
+.hiphop {
+    background-color: #c0392b;
+}
+
+.chill {
+    background-color: #2980b9;
+}
+
+.workout {
+    background-color: #16834a;
+}
+
+.rock {
+    background-color: #8e3548;
+}
+
+.focus {
+    background-color: #51449c;
+}
+
+/* 9. Playlist information */
+.playlist {
+    background-color: #234a30;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+}
+
+.playlist img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.playlist h1 {
+    font-size: 36px;
+}
+
+/* 10. Song table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    color: #1DB954;
+}
+
+tbody tr:hover {
+    background-color: #303030;
+}
+
+/* 11. Back links */
+.back-link {
+    margin: 25px 0;
+}
+
+/* 12. Footer */
+footer {
+    background-color: #000;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #b3b3b3;
+    margin-bottom: 8px;
+}
+
+/* 13. Mobile screen adjustments */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .playlist h1 {
+        font-size: 28px;
+    }
+
+    th,
+    td {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+}

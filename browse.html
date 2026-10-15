@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Browse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <h2 class="logo">♫ Spotify</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="playlist.html">Playlists</a>
+            <a href="#footer">Support</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1>Browse All</h1>
+        <p>Choose a music genre you enjoy.</p>
+
+        <!-- Search form -->
+        <form action="browse.html" method="get">
+            <input
+                type="text"
+                name="search"
+                placeholder="Search music..."
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Music genres -->
+        <h2>Explore Genres</h2>
+
+        <div class="genres">
+
+            <a href="playlist.html" class="genre pop">
+                <h3>Pop</h3>
+            </a>
+
+            <a href="playlist.html" class="genre hiphop">
+                <h3>Hip-Hop</h3>
+            </a>
+
+            <a href="playlist.html" class="genre chill">
+                <h3>Chill</h3>
+            </a>
+
+            <a href="playlist.html" class="genre workout">
+                <h3>Workout</h3>
+            </a>
+
+            <a href="playlist.html" class="genre rock">
+                <h3>Rock</h3>
+            </a>
+
+            <a href="playlist.html" class="genre focus">
+                <h3>Focus</h3>
+            </a>
+
+        </div>
+
+        <p class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </p>
+
+    </main>
+
+    <footer id="footer">
+        <p>Spotify Clone | Made for learning HTML and CSS</p>
+        <a href="index.html">Home</a>
+    </footer>
+
+</body>
+</html>
